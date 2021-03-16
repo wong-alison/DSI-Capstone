@@ -81,4 +81,4 @@ https://wiki.teamfortress.com/wiki/User:RJackson/StorefrontAPI
 - Gensim
 
 ### Contact
-[LinkedIn:]https://www.linkedin.com/in/alison-wong-aw/)
+[LinkedIn:](https://www.linkedin.com/in/alison-wong-aw/)
