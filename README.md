@@ -14,6 +14,7 @@ We can further extract customer feedback via opinion mining into these reviews, 
 
 ### Project Contents
 
+Please use nbviewer to view plots and widgets
 
 #### Part 1, Data Acquisition
 
