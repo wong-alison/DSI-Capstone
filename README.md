@@ -71,14 +71,14 @@ https://wiki.teamfortress.com/wiki/User:RJackson/StorefrontAPI
 
 ### Libraries Used
 
-Pandas
-NumPy
-NLTK
-Scikit-learn
-Matplotlib
-Plotly
-LDA
-Gensim
+- Pandas
+- NumPy
+- NLTK
+- Scikit-learn
+- Matplotlib
+- Plotly
+- LDA
+- Gensim
 
 ### Contact
 [LinkedIn:]https://www.linkedin.com/in/alison-wong-aw/)
