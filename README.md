@@ -12,6 +12,8 @@ The aim of this project is to classify and predict user rated helpful and non-he
 
 We can further extract customer feedback via opinion mining into these reviews, in order to categorise these reviews by what they are rating on - eg - storyline, graphics, soundtrack, developers, which would be interesting for both game companies and also users. Eg - A user with a specific preference for good storyline may wish to filter specifically on reviews which talk about this. For companies we can quickly summarise a representation of opinions - some games have 100k reviews for the one game alone (check these numbers)
 
+![steam reviews](https://user-images.githubusercontent.com/69991618/111782162-9cba2a80-88b0-11eb-9703-7fd35ffdc9ca.png)
+
 ### Project Contents
 
 Please use nbviewer to view plots and widgets
@@ -58,10 +60,17 @@ Investigated the following model features:
 - Max-features - min_df, max_df
 - N-Grams - unigrams, bigrams, trigrams 
 
+
+![Cvec base models](https://user-images.githubusercontent.com/69991618/111782004-6aa8c880-88b0-11eb-9d6b-6378a0bbe0de.png)
+
+
 #### Part 6, LDA Topic Modelling - What are the most discussed topics?
 Using LDA and the gensim package I was able to generate and assign topics to the reviews via unsupervised learning.
 
 I then use the PyLDAvis package to visualise these clusters
+
+
+![pyldavis1](https://user-images.githubusercontent.com/69991618/111781886-46e58280-88b0-11eb-930d-b5f05ac7bb4f.png)
 
 ### References
 https://steamcommunity.com/dev
