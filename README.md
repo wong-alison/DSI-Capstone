@@ -17,7 +17,7 @@ The aim of this project is to classify and predict user rated helpful and non-he
 
 We can further extract customer feedback via opinion mining into these reviews, in order to categorise these reviews by what they are rating on - eg - storyline, graphics, soundtrack, developers, which would be interesting for both game companies and also users. Eg - A user with a specific preference for good storyline may wish to filter specifically on reviews which talk about this. For companies we can quickly summarise a representation of opinions - some games have 100k reviews for the one game alone (check these numbers)
 
-![steam reviews](https://user-images.githubusercontent.com/69991618/111782162-9cba2a80-88b0-11eb-9703-7fd35ffdc9ca.png)
+<img width="700" src="https://user-images.githubusercontent.com/69991618/111782162-9cba2a80-88b0-11eb-9703-7fd35ffdc9ca.png">
 
 ### Project Contents
 
