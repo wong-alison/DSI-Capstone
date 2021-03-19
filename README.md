@@ -1,4 +1,7 @@
-![687474703a2f2f696d6775722e636f6d2f315a63527972632e706e67](https://user-images.githubusercontent.com/69991618/111783988-c2483380-88b2-11eb-806b-6e2bbd495298.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/69991618/111783988-c2483380-88b2-11eb-806b-6e2bbd495298.png" width="200"/> 
+</p>
+
 
 # General Assembly Capstone Project - Data Science Immersive course
 
@@ -65,7 +68,7 @@ Investigated the following model features:
 - N-Grams - unigrams, bigrams, trigrams 
 
 
-<img width="1014" alt="final model coefs" src="https://user-images.githubusercontent.com/69991618/111785285-4fd85300-88b4-11eb-9b56-06de115d1473.png">
+<img width="800" alt="final model coefs" src="https://user-images.githubusercontent.com/69991618/111785285-4fd85300-88b4-11eb-9b56-06de115d1473.png">
 
 
 #### Part 6, LDA Topic Modelling - What are the most discussed topics?
