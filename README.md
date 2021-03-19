@@ -1,3 +1,5 @@
+![687474703a2f2f696d6775722e636f6d2f315a63527972632e706e67](https://user-images.githubusercontent.com/69991618/111783988-c2483380-88b2-11eb-806b-6e2bbd495298.png)
+
 # General Assembly Capstone Project - Data Science Immersive course
 
 This project was completed as part of the Data Science Immersive course at General Assembly.
@@ -54,6 +56,8 @@ I fitted a variety of default models including the below:
 - Support Vector Machines: maximum margin classifier
 - Naive Bayes: probabilistic classifier
 
+![Cvec base models](https://user-images.githubusercontent.com/69991618/111782004-6aa8c880-88b0-11eb-9d6b-6378a0bbe0de.png)
+
 Based on the results I decided to focus on runing the Logistic Regression model with CountVectorizer
 
 Investigated the following model features:
@@ -61,7 +65,7 @@ Investigated the following model features:
 - N-Grams - unigrams, bigrams, trigrams 
 
 
-![Cvec base models](https://user-images.githubusercontent.com/69991618/111782004-6aa8c880-88b0-11eb-9d6b-6378a0bbe0de.png)
+<img width="1014" alt="final model coefs" src="https://user-images.githubusercontent.com/69991618/111785285-4fd85300-88b4-11eb-9b56-06de115d1473.png">
 
 
 #### Part 6, LDA Topic Modelling - What are the most discussed topics?
@@ -71,6 +75,16 @@ I then use the PyLDAvis package to visualise these clusters
 
 
 ![pyldavis1](https://user-images.githubusercontent.com/69991618/111781886-46e58280-88b0-11eb-930d-b5f05ac7bb4f.png)
+
+### Part 7 - Key Learnings and Further Work
+Throughout this project I was able to learn a lot about a variety of NLP processes and how they can be applied.
+Given the topic I decided to base this on I found there was a lot of semantic meaning in words that was rather difficult to tune a model for eg - sarcasm in text and sassy voting where reviews which are clearly not helpful (eg - only contain 1 word) are rated as helpful however taking the overall weighted score seemed to be enough to resolve this.
+
+For further work I could look at further text-processing methods, vectorisation methods such as word embeddings like word2vec that look at the words occuring before and afterwards to gain additional semantic meaning.
+
+There was also a lot of short hand chat speak and domain specific lexicon that a standard spellchecker was not able to correct, as a future project I would like to try training my own spellcheckers.
+
+An additional option would to be obtain more review data on games in order to do comparisons against genres and ratings, comapring the parent game reviews against the DLCS
 
 ### References
 https://steamcommunity.com/dev
