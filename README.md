@@ -30,7 +30,7 @@ The dataset acquired includes 40 columns with 70k games, 25k DLCs and 76k total 
 
 #### Part 2, Data Cleaning
 
-People say that the job of a Data Scientist is 80% cleaning and 20% modelling, this project was 60% scraping and 35% cleaning. It was definitely a challenge scraping and cleaning my own dataset but I learnt a lot in the process.
+The data returned from the API was in a JSON format. When scraping I saved the data to csv using the csv dictwriter, I then applied json.normalize and literal_evals to extract the content of the dictionaries into separate columns
 
 #### Part 3, Exploratory Data Analysis
 
@@ -47,8 +47,6 @@ I experimented with a variety of text pre-processing steps incuding:
 - Stop word removal
 - Word lemmatisation
 - Text vectorisers: CountVectorizer and TF-IDF
-
-I later went back to see if I could improve my model via spellchecking however this took too long to process and due to the lexicon used by reviewers I realised I would have to tune my spellchecker. Unfortuantely I ran out of time to apply this to my project however it is something I am keen to go back and explore.
 
 #### Part 5, Classification Modelling and Fine Tuning
 
@@ -85,7 +83,7 @@ Given the topic I decided to base this on I found there was a lot of semantic me
 
 For further work I could look at further text-processing methods, vectorisation methods such as word embeddings like word2vec that look at the words occuring before and afterwards to gain additional semantic meaning.
 
-There was also a lot of short hand chat speak and domain specific lexicon that a standard spellchecker was not able to correct, as a future project I would like to try training my own spellcheckers.
+There was also a lot of short hand chat speak and domain specific lexicon that a standard spellchecker was not able to correct, as a future project I would like to try training my own spellchecker in order to improve this model
 
 An additional option would to be obtain more review data on games in order to do comparisons against genres and ratings, comapring the parent game reviews against the DLCS
 
