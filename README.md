@@ -9,13 +9,13 @@ This project was completed as part of the Data Science Immersive course at Gener
 
 ### Predicting Helpful Game Reviews and Gathering Key Insights through Topic Modelling
 
-Steam is an online platform from where you can buy, play and discuss PC games. The platform hosts thousands of games as well as downloadable content (DLC) from major developers and indie game designers alike. With around 120 million active users on average each month there has been a large number of reviews accumulated over the yers. On Steam each game in the online store can be commented or rated on by those who own it. Each review also shows the time played at time of review and also the total time played. Additionally each user can vote on whether they deem a review helpful, non-help or funny.
+Steam is an online platform from where you can buy, play and discuss PC games. The platform hosts thousands of games as well as downloadable content (DLC) from major developers and indie game designers alike. With around 120 million active users on average each month there has been a large number of reviews accumulated over the years. On Steam each game in the online store can be commented or rated on by those who own it. Each review also shows the time played at time of review and also the total time played. Additionally each user can vote on whether they deem a review helpful, non-helpful or funny.
 
-Due to the ever increasing number of reviews made, it would be uselul to users and developers alike to filter the most relevant reviews not only to speed up the decision process but also to improve it. Gathering only the helpful reviews would reduce information processing time and save effort. To develop this functionality we need reliable prediction algorithms to classify and predict new reviews as helpful or not, even if the review has not been voted yet. 
+Due to the ever increasing number of reviews made, it would be useful to users and developers alike to filter the most relevant reviews not only to speed up the decision process but also to improve it. Gathering only the helpful reviews would reduce information processing time and save effort. To develop this functionality we need reliable prediction algorithms to classify and predict new reviews as helpful or not, even if the review has not been voted yet. 
 
-The aim of this project is to classify and predict user rated helpful and non-helpful game reviews through sentiment analysis. The result of this project on the test data shows that the model performs better compared to the baseline: if a review is classified as helpful or non-helpful the classification is correct with a probability of about 67%.
+The aim of this project is to classify and predict user rated helpful and non-helpful game reviews through NLP analysis. The result of this project on the test data shows that the model performs better compared to the baseline: if a review is classified as helpful or non-helpful the classification is correct with a probability of about 67%.
 
-We can further extract customer feedback via opinion mining into these reviews, in order to categorise these reviews by what they are rating on - eg - storyline, graphics, soundtrack, developers, which would be interesting for both game companies and also users. Eg - A user with a specific preference for good storyline may wish to filter specifically on reviews which talk about this. For companies we can quickly summarise a representation of opinions - some games have 100k reviews for the one game alone (check these numbers)
+We can further extract customer feedback via opinion mining into these reviews, in order to categorise these reviews by what they are rating on - eg - storyline, graphics, soundtrack, developers, which would be interesting for both game companies and also users. Eg - A user with a specific preference for good storyline may wish to filter specifically on reviews which talk about this. For companies we can quickly summarise a representation of opinions - some games have 100k reviews for the one game alone.
 
 <img width="700" src="https://user-images.githubusercontent.com/69991618/111782162-9cba2a80-88b0-11eb-9703-7fd35ffdc9ca.png">
 
@@ -26,11 +26,13 @@ Please use nbviewer to view plots and widgets
 #### Part 1, Data Acquisition
 
 Data was acquired from the Steam Store via a variety of APIs provided by Steam and scraped using the Requests library.
-The dataset acquired includes 40 columns with 70k games, 25k DLCs and 76k total DLC reviews with 51k unique authors
+The dataset acquired includes: game data with 39 columns with 109k games, reviews data set of 25k DLCs and 77k total DLC reviews with 51k unique authors
 
 #### Part 2, Data Cleaning
 
-People say that the job of a Data Scientist is 80% cleaning and 20% modelling, this project was 60% scraping and 35% cleaning. It was definitely a challenge scraping and cleaning my own dataset but I learnt a lot in the process.
+The data returned from the API was in a JSON format. When scraping I saved the data to csv using the csv dictwriter, I then applied json.normalize and literal_evals to extract the content of the dictionaries into separate columns
+
+The final dataset after cleaning includes: game data with 27 columns for 60k games, reviews data set with 25k DLCs and 77k total DLC reviews with 51k unique authors.
 
 #### Part 3, Exploratory Data Analysis
 
@@ -47,8 +49,6 @@ I experimented with a variety of text pre-processing steps incuding:
 - Stop word removal
 - Word lemmatisation
 - Text vectorisers: CountVectorizer and TF-IDF
-
-I later went back to see if I could improve my model via spellchecking however this took too long to process and due to the lexicon used by reviewers I realised I would have to tune my spellchecker. Unfortuantely I ran out of time to apply this to my project however it is something I am keen to go back and explore.
 
 #### Part 5, Classification Modelling and Fine Tuning
 
@@ -85,7 +85,7 @@ Given the topic I decided to base this on I found there was a lot of semantic me
 
 For further work I could look at further text-processing methods, vectorisation methods such as word embeddings like word2vec that look at the words occuring before and afterwards to gain additional semantic meaning.
 
-There was also a lot of short hand chat speak and domain specific lexicon that a standard spellchecker was not able to correct, as a future project I would like to try training my own spellcheckers.
+There was also a lot of short hand chat speak and domain specific lexicon that a standard spellchecker was not able to correct, as a future project I would like to try training my own spellchecker in order to improve this model
 
 An additional option would to be obtain more review data on games in order to do comparisons against genres and ratings, comapring the parent game reviews against the DLCS
 
