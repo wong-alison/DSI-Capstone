@@ -26,11 +26,13 @@ Please use nbviewer to view plots and widgets
 #### Part 1, Data Acquisition
 
 Data was acquired from the Steam Store via a variety of APIs provided by Steam and scraped using the Requests library.
-The dataset acquired includes 40 columns with 70k games, 25k DLCs and 76k total DLC reviews with 51k unique authors
+The dataset acquired includes: game data with 39 columns with 109k games, reviews data set of 25k DLCs and 77k total DLC reviews with 51k unique authors
 
 #### Part 2, Data Cleaning
 
 The data returned from the API was in a JSON format. When scraping I saved the data to csv using the csv dictwriter, I then applied json.normalize and literal_evals to extract the content of the dictionaries into separate columns
+
+The final dataset after cleaning includes: game data with 27 columns for 60k games, reviews data set with 25k DLCs and 77k total DLC reviews with 51k unique authors.
 
 #### Part 3, Exploratory Data Analysis
 
